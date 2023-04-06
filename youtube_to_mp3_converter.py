@@ -2,7 +2,7 @@ from pytube import YouTube
 from pydub import AudioSegment
 
 # 設定要下載的影片 URL
-url = "https://www.youtube.com/watch?v=7LjXRbCKBIw"
+url = "https://www.youtube.com/watch?v=IvOdTbIYZs4"
 
 # 建立 YouTube 物件
 yt = YouTube(url)

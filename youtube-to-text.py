@@ -3,7 +3,7 @@ from pydub import AudioSegment
 import openai
 
 # 設定要下載的影片 URL
-url = "https://www.youtube.com/watch?v=IvOdTbIYZs4"
+url = "https://www.youtube.com/watch?v=h-dPvvPAao4&t=3s"
 
 # 建立 YouTube 物件
 yt = YouTube(url)
@@ -30,4 +30,4 @@ for chunk in chunks:
         transcript += result["text"]
 
 # 印出轉換後的文字
-print(transcript)
+with open("逐字稿.txt", "w") as f: f.write(transcript)
